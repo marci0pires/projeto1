@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
     <header>
         <h1>CONTATO</h1>
@@ -15,7 +17,7 @@
             <a href="contato.html">Contato</a>
             <a href="galeria.html">Galeria</a>
             <a href="sobre.html">Sobre</a>
-</nav>
+        </nav>
     </header>
     <form>
         <label for="name">Nome: </label>
@@ -51,7 +53,15 @@
         <label for="cor">Selecione uma Cor</label>
         <input type="color" name="cor" id="cor">
 
-        <button type="submit">Enviar</button>
+        <button type="submit" onclick="mostraMensagem()">Enviar</button>
     </form>
+
+    <script>
+        function mostraMensagem() {
+            alert("Fomulario Enviado")
+        }
+    </script>
+
 </body>
+
 </html>
